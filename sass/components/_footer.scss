@@ -1,0 +1,53 @@
+.footer{
+    background-color: var(--bg-hat);
+    color: var(--blfon-text-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-flex{
+    display: flex;
+    align-items: baseline;
+}
+.footer-hiro{
+    margin-right: 70px;
+}
+.footer_gis{
+    margin-top: 20px;
+    font-style: inherit;
+}
+.footer_map{
+    color: var(--blfon-tearticl-text-cl);
+    margin-bottom: 10px;
+}
+.footer_map_list{
+    margin-bottom: 10px;
+}
+.footer_link{
+    color: var(--articl-text-cl);
+    transition: color var(--animation);    
+}
+.footer_link:hover,
+.footer_link:focus{
+    color: var(--acttiv-cl);
+}
+
+.foot-network{
+    display: block;
+}
+.foot-network_title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer_networks_list{
+    margin-top: 20px;
+    margin-left: 0;
+}
+.footer_networks_link{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.foot_network_svg{
+    fill: #FFFFFF;
+}

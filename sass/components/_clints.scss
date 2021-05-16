@@ -1,0 +1,28 @@
+.clints{
+    display: flex;
+}
+.clints_list:not(:last-child){
+    margin-right: 30px;
+}
+.clints_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;   
+}
+.clint_svg{
+    fill: #AFB1B8;
+    transition: background-color var(--animation), fill var(--animation);
+}
+.clints_link:hover .clint_svg,
+.clints_link:focus .clint_svg{
+    fill: var(--acttiv-cl);
+}
+.clints_link:hover,
+.clints_link:focus{
+    border-color: var(--acttiv-cl);  
+}

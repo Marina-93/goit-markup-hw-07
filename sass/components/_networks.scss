@@ -1,0 +1,29 @@
+.networks{
+    display: inline-flex; 
+}
+.network_list:not(:last-child){
+    margin-right: 10px;
+}
+.network_log{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: background-color var(--animation), fill var(--animation);
+}
+.network_log:hover .network_svg,
+.network_log:focus .network_svg{
+    fill: var(--buton);
+}
+.network_log:hover,
+.network_log:focus{
+    background-color: var(--acttiv-cl);
+}
+.network_svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--network-cl);
+}

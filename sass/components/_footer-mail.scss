@@ -1,0 +1,39 @@
+.sign{
+    margin-left: 93px;
+    width: 570px;
+}
+.sign_form{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.sign_mail{
+    padding-left: 16px;
+    margin-right: 12px;
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    color: #ffffff;
+    background-color: var(--bg-hat);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    transition: border-color var(--animation);
+}
+.sign_mail:focus{
+    border-color: var(--acttiv-cl);
+}
+.sign_mail::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+.sign_button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 50px;
+}
+.sign_svg{
+    fill: var(--blfon-text-cl);
+    margin-left: 10px;
+}
