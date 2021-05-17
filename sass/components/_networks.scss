@@ -11,19 +11,19 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: var(--blfon-text-cl);
     transition: background-color var(--animation), fill var(--animation);
-}
-.network_log:hover .network_svg,
-.network_log:focus .network_svg{
-    fill: var(--buton);
-}
-.network_log:hover,
-.network_log:focus{
-    background-color: var(--acttiv-cl);
+        &:hover,
+        &:focus{
+            background-color: var(--acttiv-cl);
+    }
 }
 .network_svg{
     width: 20px;
     height: 20px;
     fill: var(--network-cl);
+        .network_log:hover &,
+        .network_log:focus &{
+            fill: var(--buton);
+    }
 }

@@ -1,5 +1,5 @@
 .border{
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-cl);
 }
 .line{
     display: flex;
@@ -46,10 +46,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color var(--animation);
-}
-.line_link:hover,
-.line_link:focus{
-    color: var(--acttiv-cl);  
+    &:hover,
+    &:focus{
+        color: var(--acttiv-cl);  
+    }
 }
 .line-list_current{
     position: relative;

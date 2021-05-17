@@ -24,13 +24,12 @@
 }
 .footer_link{
     color: var(--articl-text-cl);
-    transition: color var(--animation);    
+    transition: color var(--animation);
+    &:hover,
+    &:focus{
+        color: var(--acttiv-cl);
+    }
 }
-.footer_link:hover,
-.footer_link:focus{
-    color: var(--acttiv-cl);
-}
-
 .foot-network{
     display: block;
 }

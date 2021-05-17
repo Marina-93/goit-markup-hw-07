@@ -36,9 +36,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: color var(--animation), background-color var(--animation);
-}
-.button:hover,
-.button:focus{
-    background-color: var(--acttiv-cl);
-    color: var(--blfon-text-cl);
+    &:hover,
+    &:focus{
+        background-color: var(--acttiv-cl);
+        color: var(--blfon-text-cl);
+    }
 }

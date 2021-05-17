@@ -19,7 +19,7 @@
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
-    background-color: #ffffff;
+    background-color: var(--blfon-text-cl);
     padding: 40px;
 }
 .modal_button{
@@ -29,14 +29,15 @@
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background: #FFFFFF;
+    background: var(--blfon-text-cl);
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: color var(--animation);
+        &:hover,
+        &:focus{
+            color: var(--acttiv-cl);
+    }
 }
-.modal_button:hover,
-.modal_button:focus{
-    color: var(--acttiv-cl);
-}
+
 .modal_title{
     font-weight: bold;
     font-size: 20px;

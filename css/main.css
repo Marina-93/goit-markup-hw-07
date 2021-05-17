@@ -2,8 +2,11 @@
   --acttiv-cl: #2196F3;
   --text-cl: #212121;
   --blfon-text-cl: #FFFFFF;
+  --list-cl:#ffffff;
   --articl-text-cl: #757575;
   --network-cl:#AFB1B8;
+  --border-cl:#ECECEC;
+  --img-cl:#EEEEEE;
   --bg-hat: #2F303A;
   --buton:#F5F4FA;
   --second-bg:#E5E5E5;
@@ -77,7 +80,7 @@ textarea {
 }
 
 .border {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid var(--border-cl);
 }
 
 .line {
@@ -135,8 +138,7 @@ textarea {
   transition: color var(--animation);
 }
 
-.line_link:hover,
-.line_link:focus {
+.line_link:hover, .line_link:focus {
   color: var(--acttiv-cl);
 }
 
@@ -214,8 +216,7 @@ textarea {
   transition: color var(--animation), background-color var(--animation);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: var(--acttiv-cl);
   color: var(--blfon-text-cl);
 }
@@ -301,18 +302,18 @@ textarea {
 }
 
 .page-job_second-title {
-  color: #FFFFFF;
+  color: var(--blfon-text-cl);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 .our-squad {
-  background-color: #F5F4FA;
+  background-color: var(--buton);
 }
 
 .our-squad_list {
-  background: #ffffff;
+  background: var(--list-cl);
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -351,17 +352,11 @@ textarea {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: var(--blfon-text-cl);
   transition: background-color var(--animation), fill var(--animation);
 }
 
-.network_log:hover .network_svg,
-.network_log:focus .network_svg {
-  fill: var(--buton);
-}
-
-.network_log:hover,
-.network_log:focus {
+.network_log:hover, .network_log:focus {
   background-color: var(--acttiv-cl);
 }
 
@@ -369,6 +364,11 @@ textarea {
   width: 20px;
   height: 20px;
   fill: var(--network-cl);
+}
+
+.network_log:hover .network_svg,
+.network_log:focus .network_svg {
+  fill: var(--buton);
 }
 
 .clints {
@@ -385,24 +385,23 @@ textarea {
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--network-cl);
   box-sizing: border-box;
   border-radius: 4px;
 }
 
+.clints_link:hover, .clints_link:focus {
+  border-color: var(--acttiv-cl);
+}
+
 .clint_svg {
-  fill: #AFB1B8;
+  fill: var(--network-cl);
   transition: background-color var(--animation), fill var(--animation);
 }
 
 .clints_link:hover .clint_svg,
 .clints_link:focus .clint_svg {
   fill: var(--acttiv-cl);
-}
-
-.clints_link:hover,
-.clints_link:focus {
-  border-color: var(--acttiv-cl);
 }
 
 .footer {
@@ -440,8 +439,7 @@ textarea {
   transition: color var(--animation);
 }
 
-.footer_link:hover,
-.footer_link:focus {
+.footer_link:hover, .footer_link:focus {
   color: var(--acttiv-cl);
 }
 
@@ -487,7 +485,7 @@ textarea {
   margin-top: 20px;
   width: 358px;
   height: 50px;
-  color: #ffffff;
+  color: var(--blfon-text-cl);
   background-color: var(--bg-hat);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -539,7 +537,7 @@ textarea {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: #ffffff;
+  background-color: var(--blfon-text-cl);
   padding: 40px;
 }
 
@@ -550,13 +548,12 @@ textarea {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  background: #FFFFFF;
+  background: var(--blfon-text-cl);
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: color var(--animation);
 }
 
-.modal_button:hover,
-.modal_button:focus {
+.modal_button:hover, .modal_button:focus {
   color: var(--acttiv-cl);
 }
 
@@ -581,10 +578,6 @@ textarea {
 
 .border-form:focus {
   border-color: var(--acttiv-cl);
-}
-
-.border-form:focus ~ .modal_svg {
-  fill: var(--acttiv-cl);
 }
 
 .form_flex {
@@ -618,6 +611,10 @@ textarea {
   position: absolute;
   top: 55%;
   left: 15px;
+}
+
+.border-form:focus ~ .modal_svg {
+  fill: var(--acttiv-cl);
 }
 
 .modal_coment {
@@ -703,8 +700,7 @@ textarea {
   transition: box-shadow var(--animation), background-color var(--animation), color var(--animation);
 }
 
-.search_button:hover,
-.search_button:focus {
+.search_button:hover, .search_button:focus {
   background-color: var(--acttiv-cl);
   color: var(--buton);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -724,8 +720,8 @@ textarea {
 }
 
 .content_list-img {
-  background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  background: var(--blfon-text-cl);
+  border: 1px solid var(--img-cl);
   margin-top: 30px;
 }
 
@@ -740,8 +736,7 @@ textarea {
   transition: box-shadow var(--animation);
 }
 
-.content_link:hover,
-.content_link:focus {
+.content_link:hover, .content_link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
